@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<title>Test</title>
+
+<meta charset="UTF-8">
+
+</head>
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css">
+<link rel="stylesheet" media="print" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.print.min.css">
+
+<script type="text/javascript" src="icalTojson.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+<script type="text/javascript">
+
+    let calendar_events = [];
+
+    /// @function process_event_obj
+    function process_event_obj(event_obj)
+    {
+        let ts = event_obj['DTSTART'];
+        let title = event_obj['SUMMARY'];
+
+        event_obj['start'] = ts;
+        event_obj['title'] = title;
+        return event_obj;
+    }
+
+    /// @function draw_calendar
+    function draw_calendar()
+    {
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prevYear,prev,next,nextYear,today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay,listWeek'
+            },
+            navLinks: true, // can click day/week names to navigate views
+            editable: false,
+            eventLimit: true, // allow "more" link when too many events
+            timezone: 'local',
+            firstDay: 1,
+            eventSources: [
+                {
+                    events: calendar_events,
+                }
+            ],
+            eventDataTransform: process_event_obj
+        });
+    }
+
+    /// @function calendar_callback
+    function calendar_callback(status, events)
+    {
+        calendar_events = events;
+        draw_calendar();
+    }
+
+    $(document).ready(function()
+    {
+        icalUrlTojson('MjczNTAwNDU0MjczNTAwNI1RG3j4WlR5e44c1qWDyQ4iIF3FkQRa1boHCBEdjlj_rA5lbbZKeSN7SJL9DdIs02QNtx05YW0My3mkWAqIjdc', calendar_callback);
+    });
+
+</script>
+
+<section>
+<div id='calendar'></div>
+</section>
+
+</body>
+</html>

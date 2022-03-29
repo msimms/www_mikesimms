@@ -1,0 +1,78 @@
+body {
+	background-color: white;
+	background: url("http://mikesimms.net/images/gradient.jpg") repeat-x;
+}
+
+p {
+	font-family: "Times New Roman";
+	color: black;
+}
+
+h1 {
+	font-family: 'Trocchi', serif;
+	font-size: 72pt;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+	color: black;
+	text-align:center;
+}
+h2, h3, h4, h5, h6 {
+	font-family: 'Trocchi', serif;
+	font-size: 12pt;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+	color: black;
+	text-align:center;
+}
+
+iframe#ifrm {
+	background:none transparent;
+	border:0px solid #ccc;
+	frameborder: 0px;
+	width:460px; height:750px;
+}
+
+.leftbar {
+	float: left;
+	width: 600px;
+	border: 0px solid black;
+}
+
+.centerbar {
+	float: center;
+	border: 0px solid black;
+}
+
+.rightbar {
+	float: right;
+	width: 600px;
+	border: 0px solid black;
+}
+
+.footer {
+	clear: both;
+	border: 0px solid black;
+}
+
+.vmenu ul,li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.vmenu a:link,a:visited {
+	display: block;
+	font-weight: bold;
+	color: #ff0000;
+	background-color: #000000;
+	width: 120px;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.vmenu a:hover,a:active {
+	background-color: #000000;
+}

@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: normal 14px/1.4 Arial, sans-serif;
+}
+
+.skrollr-desktop body {
+	height: 100% !important;
+}
+
+#skrollr-body {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.parallax-image.skrollable-between {
+	display: block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+	display: none !important;
+}
+
+.parallax-image-wrapper {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 80vh;
+	top: -80vh;
+}
+
+.parallax-image {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 70vh;
+	top: 0;
+}
+
+.parallax-image.skrollable-between {
+	display: block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+	display: none !important;
+}
+
+.gap {
+	background: transparent center no-repeat;
+	background-size: cover;
+	height: 58vh;
+}
+
+.skrollr .gap {
+	background: transparent !important;
+}
+
+#page-intro h1 {
+	text-align: center;
+	color: #fff;
+	font: normal 128px 'Droid Serif', sans-serif;
+	padding-top: 16vh;
+}
+
+@media (max-width: 800px) {
+	#page-intro h1 {
+		font-size: 42px;
+		padding-top: 15vh;
+	}
+}
+
+.body-text {
+	padding: 30px 0;
+	background-color: #fff;
+	color: #25373C;
+	font-size: 18px;
+	text-align: center;
+}
+
+.body-text h2 {
+	font-size: 42px;
+	font-weight: normal;
+	margin-bottom: 80px;
+}
+
+.body-text p {
+	width: 80%;
+	display: inline-block;
+	text-align: left;
+	padding: 20px;
+	color: #45636B;
+}
+
+@media (max-width: 900px) {
+	.body-text p {
+		width: 100%;
+	}
+}
+
+footer {
+	background-color: rgb(255,255,255);
+	border: 0px solid black;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 0px 60px 55px;
+	overflow: hidden;
+}
+
+footer .footer-left {
+	float: left;
+}
+
+footer h3 {
+	color: #5383d3;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+footer .footer-links {
+	color: #95A4A9;
+	margin: 22px 0 14px;
+	padding: 0;
+}
+
+footer .footer-links a {
+	display: inline-block;
+	text-decoration: none;
+	color: #242424;
+}
+
+footer .footer-company-name {
+	color: #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+footer .footer-right{
+	float: right;
+	width: 100%;
+}
+
+footer form input::-webkit-input-placeholder {
+	color: #5c666b;
+}
+
+footer form input::-moz-placeholder {
+	opacity: 1;
+	color: #5c666b;
+}
+
+footer form input:-ms-input-placeholder {
+	color: #5c666b;
+}
+
+@media (max-width: 1100px) {
+	footer .footer-left {
+		margin-bottom: 50px;
+	}
+	footer .footer-right {
+		float: left;
+		clear: left;
+	}
+}
+
+header {
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+	padding: 25px 40px;
+	background-color: #357F9C;
+	overflow: hidden;
+}
+
+header h1 {
+	float: left;
+	font: normal 24px/1.5 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+header a {
+	color: #fff;
+	float: right;
+	text-decoration: none;
+	display: inline-block;
+	padding: 13px 50px;
+	border-radius: 3px;
+	font: bold 14px/1 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	background-color:#F05283;
+}
+
+ul {
+	list-style: none;
+	border-bottom: 1px solid #EAEAEA;
+	background-color: #FFF;
+	padding: 20px;
+	margin-top: 0;
+	text-align: center;
+}
+
+ul a {
+	text-decoration: none;
+	color: #FFF;
+	text-align: left;
+	background-color: #BCB8C2;
+	padding: 10px 16px;
+	border-radius: 2px;
+	opacity: 0.8;
+	font-size: 16px;
+	display: inline-block;
+	margin: 4px;
+	line-height: 1;
+	outline: none;
+	transition: 0.2s ease;
+}
+
+ul li a.active {
+	background-color: #F05283;
+	pointer-events: none;
+}
+
+ul li a:hover {
+	opacity: 1;
+}
+
+ul li {
+	display: inline-block;
+}
+
+form {
+	width: 50%;
+	margin: 50px auto;
+	background-color: rgba(0,0,0,0);
+	border-radius: 0px;
+	border: 0px solid rgba(0,0,0,0);
+}
+
+.donation table {
+	font-family: sans-serif;
+	font: 14px/1 sans-serif;
+	background-color: rgba(0,0,0,0);
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.donation td {
+	border: 0px solid #FFFFFF;
+	padding: 0px;
+	border-radius: 0px;
+	text-shadow: 0px 0px #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+}
+
+.donation tr {
+	opacity: 0.7;
+}
