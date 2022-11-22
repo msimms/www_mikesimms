@@ -66,6 +66,16 @@ body {
 	background: transparent !important;
 }
 
+.error-gap {
+    background: transparent center no-repeat;
+    background-size: cover;
+    height: 160vh;
+}
+
+.skrollr .error-gap {
+    background: transparent !important;
+}
+
 #page-intro h1 {
 	text-align: center;
 	color: #fff;
