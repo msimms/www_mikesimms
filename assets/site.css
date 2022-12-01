@@ -30,7 +30,6 @@ h2, h3, h4, h5, h6 {
 iframe#ifrm {
 	background:none transparent;
 	border:0px solid #ccc;
-	frameborder: 0px;
 	width:460px; height:750px;
 }
 
