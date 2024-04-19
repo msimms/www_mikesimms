@@ -34,59 +34,18 @@
         <h1>File Not Found</h1>
     </div>
 
-    <footer>
-        <div class="footer-left">
-            <p class="footer-links">
-                <a href="resume/Resume.pdf">R&eacutesum&eacute</a>
-                ·
-                <a href="http://www.linkedin.com/pub/michael-simms/33/339/811">LinkedIn</a>
-                ·
-                <a href="https://mjs-software.com">Consulting</a>
-                ·
-                <a href="https://github.com/msimms">GitHub</a>
-                ·
-                <br>
-                <a href="http://www.strava.com/athletes/simms_michael">Strava</a>
-                ·
-                <a href="https://www.athlinks.com/athletes/238193579">Athlinks</a>
-                ·
-                <a href="https://www.zwiftpower.com/profile.php?z=11607">Zwift Power</a>
-                ·
-                <a href="https://www.mtbproject.com/user/200098838/mike-simms/checkins">MTB Checkins</a>
-                ·
-                <a href="https://www.hikingproject.com/user/200098838/mike-simms#checkins">Hiking Checkins</a>
-                ·
-                <a href="https://www.trailrunproject.com/user/200098838/mike-simms#checkins">Trail Run Checkins</a>
-                ·
-                <a href="https://www.komoot.com/user/2286459902191">Komoot</a>
-                ·
-                <a href="live/index.html">Live Cycling & Running Feed</a>
-                ·
-                <br>
-                <a href="https://www.youtube.com/channel/UC9bBp_jJlUnn5AouOUED36w">YouTube</a>
-                ·
-                <a href="https://twitter.com/mike_simms_1">Twitter (Abandoned)</a>
-                ·
-                <a href="https://mastodon.social/@msimms">Mastodon</a>
-                ·
-                <a href="https://www.setlist.fm/user/msimms">Concert Checkins</a>
-                ·
-                <br>
-                I Am Not On Facebook
-            </p>
-            <p class="footer-company-name">Michael Simms &copy; 2023</p>
-        </div>
-    </footer>
+    <div class="footerdiv"></div>
 
 </div>
 
 <script src="assets/skrollr.min.js"></script>
-
-<script>
-    skrollr.init();
-</script>
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(function (){
+        $(".footerdiv").load("footer.html");
+        skrollr.init();
+    });
+</script>
 
 </body>
 </html>
