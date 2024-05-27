@@ -112,6 +112,12 @@ body{
     font-size: 18px;
 }
 
+@media (max-width: 800px) {
+    .about-me {
+        min-height: 20vh;
+    }
+}
+
 .about-me h2 {
     font-size: 42px;
     font-weight: normal;
@@ -122,6 +128,13 @@ body{
     width: 35%;
     margin: 50px 10px;
     display: inline-block;
+}
+
+@media (max-width: 800px) {
+    .about-me div {
+        width: 45%;
+        margin: 20px 0;
+    }
 }
 
 .about-me div img {
@@ -139,12 +152,6 @@ body{
     opacity: 0.5;
 }
 
-@media (max-width: 800px) {
-    .about-me div {
-        width: 45%;
-        margin: 20px 0;
-    }
-}
 
 /* Footer */
 
