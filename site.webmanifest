@@ -3,6 +3,5 @@
   "scope": "/",
   "start_url": "/index.html",
   "display": "fullscreen",
-  "background_color": "white",
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+  "background_color": "white"
 }
